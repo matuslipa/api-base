@@ -1,0 +1,8 @@
+[program:change_me-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/change_me/artisan queue:work --sleep=3 --tries=3 --daemon
+autostart=true
+autorestart=true
+numprocs=4
+user=simplo
+redirect_stderr=true

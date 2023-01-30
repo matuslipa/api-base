@@ -1,0 +1,14 @@
+[mysqld]
+log-error=/var/log/mariadb/mysqld.log
+max_allowed_packet=1024M
+aria_pagecache_buffer_size=2048M
+back_log=1000
+host_cache_size=32
+log_warnings=3
+slow_query_log
+slow_query_log_file=mariadb-slow.log
+max_connections=400
+max_connect_errors=4294967295
+key_buffer_size=512M
+tmp_table_size=512M
+thread_cache_size=200

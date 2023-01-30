@@ -1,0 +1,8 @@
+[program:change_me-websockets]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/change_me/artisan websockets:serve --host 0.0.0.0 --port 6XXX
+autostart=true
+autorestart=true
+numprocs=1
+user=simplo
+redirect_stderr=true
