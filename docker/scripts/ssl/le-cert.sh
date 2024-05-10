@@ -9,7 +9,7 @@ then
 fi
 
 PROJECT_DIR="/var/dev-docker";
-PERMISSION_GROUP=simplo
+PERMISSION_GROUP=matus
 
 echo "Generating certificate for domain: $1"
 

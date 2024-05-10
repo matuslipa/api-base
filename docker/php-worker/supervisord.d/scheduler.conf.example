@@ -4,5 +4,5 @@ command=/bin/sh -c "while [ true ]; do (php /var/www/change_me/artisan schedule:
 autostart=true
 autorestart=true
 numprocs=1
-user=simplo
+user=matus
 redirect_stderr=true

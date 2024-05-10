@@ -32,8 +32,8 @@ ENV PUID ${PUID}
 ARG PGID=1000
 ENV PGID ${PGID}
 
-RUN addgroup -g ${PGID} simplo && \
-    adduser -D -G simplo -u ${PUID} simplo
+RUN addgroup -g ${PGID} matus && \
+    adduser -D -G matus -u ${PUID} matus
 
 #Install BZ2:
 ARG INSTALL_BZ2=false

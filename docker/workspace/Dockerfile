@@ -86,9 +86,9 @@ ENV PGID ${PGID}
 RUN set -xe; \
     apt-get update -yqq && \
     pecl channel-update pecl.php.net && \
-    groupadd -g ${PGID} simplo && \
-    useradd -u ${PUID} -g simplo -m simplo -G docker_env && \
-    usermod -p "*" simplo -s /bin/bash && \
+    groupadd -g ${PGID} matus && \
+    useradd -u ${PUID} -g matus -m matus -G docker_env && \
+    usermod -p "*" matus -s /bin/bash && \
     apt-get install -yqq \
       apt-utils \
       # next lines are here becase there is no auto build on dockerhub
