@@ -14,7 +14,7 @@ if [[ $(docker ps | grep workspace-$PHP_VERSION) = "" ]]; then
 fi
 
 run_in_container() {
-    USER=${2:-simplo};
+    USER=${2:-matus};
 
     echo "Executing command \"$1\" as user \"${USER}\"...";
     docker compose exec -u ${USER} workspace bash -ic "cd api-base && $1"

@@ -3,7 +3,7 @@
 set -e
 
 PROJECT_DIR="/var/dev-docker"
-PERMISSION_GROUP=simplo
+PERMISSION_GROUP=matus
 
 AUTHENTICATOR_PATH="${PROJECT_DIR}/scripts/authenticator-le.sh"
 DOCKER_DIR="${PROJECT_DIR}/docker"
